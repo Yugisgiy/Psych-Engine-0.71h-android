@@ -16,7 +16,7 @@ import options.OptionsState;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '0.7.1h'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = 'light mode 0.7.1h'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -27,9 +27,9 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
-		#if !switch 'donate', #end
+		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		//'credits',
+		//#if !switch 'donate', #end
 		'options'
 	];
 
